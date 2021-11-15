@@ -1,0 +1,9 @@
+<div class="card-deck p-3">
+    <div class="card text-center" *ngFor='let prod of productslist' style="width: 300px">
+      <img class="card-img-top" [src]= 'prod.prodimg' alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">{{prod.prodname}}</h5>
+        <p class="card-text">{{prod.prodprice}}</p>
+      </div>
+    </div>
+</div>
