@@ -8,9 +8,14 @@ import { ProductsListService } from 'src/app/services/products-list.service';
 })
 export class ProductsOnPageComponent {
 
-  constructor(private productsListService:ProductsListService) { }
+  productslist:any=[];
+  errMsg:string='';
+  
+  constructor(private productsListService:ProductsListService) { 
+    productsListService.getproduct().subscribe((res: any) => this.productslist = res,
+                                               (err: string) => this.errMsg = err    );
+  }
 
-  productslist:any= this.productsListService.getproduct();
- 
+
 
 }
