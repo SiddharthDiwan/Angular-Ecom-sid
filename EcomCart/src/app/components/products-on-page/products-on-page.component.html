@@ -1,9 +1,13 @@
-<div class="card-deck p-3">
-    <div class="card text-center" *ngFor='let prod of productslist' style="width: 300px">
-      <img class="card-img-top" [src]= 'prod.prodimg' alt="Card image cap">
+<div class="row row-cols-1 row-cols-md-4 g-4 p-4">
+  <div class="col" *ngFor='let prod of productslist'>
+    <div class="card text-center m-2">
+      <img class="card-img-top" [src]= 'prod.prodimg' alt="Card image cap" >
       <div class="card-body">
-        <h5 class="card-title">{{prod.prodname}}</h5>
-        <p class="card-text">{{prod.prodprice}}</p>
+        <h5 class="card-title">product name: {{prod.prodname}}</h5>
+        <p class="card-text">product price: {{prod.prodprice}}</p>
+        <button class="btn btn-warning m-1">Buy Now</button>
+        <button class="btn btn-secondary">Add to cart</button>
       </div>
     </div>
+</div>
 </div>
