@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ProductsOnPageComponent } from './components/products-on-page/products-on-page.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,7 @@ import { ProductsOnPageComponent } from './components/products-on-page/products-
     ProductsOnPageComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
