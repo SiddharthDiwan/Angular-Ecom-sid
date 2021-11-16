@@ -6,3 +6,16 @@ img{
     margin-right: auto;
     
 }
+
+.card button{
+    width: 110px;
+}
+
+.card-title{
+    height: 50px;
+}
+
+.card-body{
+    background-color: rgb(210, 228, 248);
+ 
+}
