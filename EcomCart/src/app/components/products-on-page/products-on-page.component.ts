@@ -13,7 +13,7 @@ export class ProductsOnPageComponent {
   
   constructor(private productsListService:ProductsListService) { 
     productsListService.getproduct().subscribe((res: any) => this.productslist = res,
-                                               (err: string) => this.errMsg = err    );
+                                               (err: string) => this.errMsg = err );
   }
 
 
