@@ -6,16 +6,20 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ProductsOnPageComponent } from './components/products-on-page/products-on-page.component';
 import { HttpClientModule } from '@angular/common/http';
+import { CartComponent } from './components/cart/cart.component';
+import { NavigationRoutesRoutingModule } from './modules/navigation-routes/navigation-routes-routing.module';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     FooterComponent,
-    ProductsOnPageComponent
+    ProductsOnPageComponent,
+    CartComponent
   ],
   imports: [
-    BrowserModule,HttpClientModule
+    BrowserModule,HttpClientModule,NavigationRoutesRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
