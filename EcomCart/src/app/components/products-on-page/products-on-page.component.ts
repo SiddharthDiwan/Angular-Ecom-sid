@@ -1,21 +1,26 @@
 import { Component, OnInit } from '@angular/core';
-import { ProductsListService } from 'src/app/services/products-list.service';
+import { CrudOpnService } from 'src/app/services/crud-opn.service';
 
 @Component({
   selector: 'app-products-on-page',
   templateUrl: './products-on-page.component.html',
   styleUrls: ['./products-on-page.component.css']
 })
-export class ProductsOnPageComponent {
+export class ProductsOnPageComponent implements OnInit{
 
   productslist:any=[];
   errMsg:string='';
   
-  constructor(private productsListService:ProductsListService) { 
-    productsListService.getproduct().subscribe((res: any) => this.productslist = res,
-                                               (err: string) => this.errMsg = err );
+  constructor(private crudOpnService:CrudOpnService) { 
   }
 
+  ngOnInit(){
+    this.crudOpnService.getAllProducts().subscribe((res: any) => this.productslist = res,
+                                                  (err: string) => this.errMsg = err );
+  }
 
+  addToCart(product:any){
+    this.crudOpnService.addToCart(product).subscribe(data=>{})
+  }
 
 }

@@ -6,7 +6,7 @@
         <h5 class="card-title">product: {{prod.prodname}}</h5>
         <p class="card-text">product price: {{prod.prodprice}}</p>
         <button class="btn btn-warning m-1">Buy Now</button>
-        <button class="btn btn-secondary">Add to cart</button>
+        <button class="btn btn-secondary" (click)='addToCart(prod)'>Add to cart</button>
       </div>
     </div>
 </div>
