@@ -1,5 +1,29 @@
-<div class="bg-secondary p-2">
-    <img src='./../../../assets/yoda.jpeg' style="width: 650px; height: 420px;padding:20px;">
+<!-- //empty cart -->
+<div>
+  <button (click)='checkCart()' class="btn btn-info m-2">sync cart</button>
+<div class="bg-secondary p-2" *ngIf='isCartEmpty'>
+  <img src='./../../../assets/yoda.jpeg' style="width: 650px; height: 420px;padding:20px;">
 <h3 class="display-4">UH oh, the Cart seems empty !</h3>
 <small>Just like our lives :)</small>
+</div>
+
+<!-- //cart products -->
+<div class="row row-cols-1 row-cols-md-4 g-4 p-4" *ngIf='!isCartEmpty'>
+    <div class="col" *ngFor='let prod of cartItems'>
+      <div class="card text-center m-2">
+        <img class="card-img-top" [src]= 'prod.prodimg' alt="Card image cap" >
+        <div class="card-body">
+          <h5 class="card-title">product: {{prod.prodname}}</h5>
+          <p class="card-text">product price: {{prod.prodprice}}</p>
+          <button class="btn btn-secondary m-1">Buy Now</button>
+          <button class="btn btn-danger" id="delete_btn" (click)='deleteCartItems(prod.id)'>Delete</button>
+        </div>
+      </div>
+  </div>
+  </div>
+
+  <div class="text-end border border-warning rounded m-3 bg-light p-2">
+    <h3>Cart total: {{bagPrice}}</h3>
+  </div>
+
 </div>

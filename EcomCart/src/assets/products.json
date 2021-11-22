@@ -1,24 +1,10 @@
-{
-    "Products": [
-      {
-        "id": 1,
-        "productName": "prod A",
-        "productPrice": "1000"
-      },
-      {
-        "id": 2,
-        "productName": "Prod B",
-        "productPrice": "3000"
-      },
-      {
-        "id": 3,
-        "productName": "Prod C",
-        "productPrice": "2000"
-      },
-      {
-        "productName": "One Plus TV",
-        "productPrice": "30000",
-        "id": 4
-      }
+
+  {
+    "products":[
+    {"id":101,"prodname":"samsung TV","prodprice":30000,"prodimg":"./../../assets/samsung.jpg"},
+    {"id":102,"prodname":"LG TV","prodprice":20000,"prodimg":"./../../assets/LG.jpg"},
+    {"id":103,"prodname":"Onida TV","prodprice":25000,"prodimg":"./../../assets/onida.jpg"},
+    {"id":104,"prodname":"Oneplus TV","prodprice":35000,"prodimg":"./../../assets/oneplus.jpg"},
+    {"id":105,"prodname":"Chinese TV","prodprice":3000,"prodimg":"./../../assets/chinese.jpg"}
     ]
-  }
+}

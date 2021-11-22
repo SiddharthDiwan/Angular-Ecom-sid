@@ -1,6 +1,6 @@
 img{
-    width: 100px;
-    height: 70px;
+    width: 120px;
+    height: 100px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -12,10 +12,10 @@ img{
 }
 
 .card-title{
-    height: 50px;
+    height: 25px;
 }
 
 .card-body{
-    background-color: rgb(210, 228, 248);
+    background-color: rgb(183 219 228)
  
 }
