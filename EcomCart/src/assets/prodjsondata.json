@@ -4,69 +4,80 @@
       "id": 101,
       "prodname": "samsung TV",
       "prodprice": 30000,
-      "prodimg": "./../../assets/samsung.jpg"
+      "prodimg": "./../../assets/samsung.jpg",
+      "category":"TV"
     },
     {
       "id": 102,
       "prodname": "LG TV",
       "prodprice": 20000,
-      "prodimg": "./../../assets/LG.jpg"
+      "prodimg": "./../../assets/LG.jpg",
+      "category":"TV"
     },
     {
       "id": 103,
       "prodname": "Onida TV",
       "prodprice": 25000,
-      "prodimg": "./../../assets/onida.jpg"
+      "prodimg": "./../../assets/onida.jpg",
+      "category":"TV"
     },
     {
       "id": 104,
       "prodname": "Oneplus TV",
       "prodprice": 35000,
-      "prodimg": "./../../assets/oneplus.jpg"
+      "prodimg": "./../../assets/oneplus.jpg",
+      "category":"TV"
     },
     {
       "id": 105,
       "prodname": "Chinese TV",
       "prodprice": 3000,
-      "prodimg": "./../../assets/chinese.jpg"
+      "prodimg": "./../../assets/chinese.jpg",
+      "category":"TV"
     },
     {
       "id": 106,
       "prodname": "Onida TV",
       "prodprice": 25000,
-      "prodimg": "./../../assets/onida.jpg"
+      "prodimg": "./../../assets/onida.jpg",
+      "category":"TV"
     },
     {
       "id": 107,
       "prodname": "Oneplus TV",
       "prodprice": 35000,
-      "prodimg": "./../../assets/oneplus.jpg"
+      "prodimg": "./../../assets/oneplus.jpg",
+      "category":"TV"
     },
     {
       "id": 108,
       "prodname": "Chinese TV",
       "prodprice": 3000,
-      "prodimg": "./../../assets/chinese.jpg"
+      "prodimg": "./../../assets/chinese.jpg",
+      "category":"TV"
     },
     {
       "id": 109,
       "prodname": "Onida TV",
       "prodprice": 25000,
-      "prodimg": "./../../assets/onida.jpg"
+      "prodimg": "./../../assets/onida.jpg",
+      "category":"TV"
     }
   ],
   "cart": [
     {
-      "id": 105,
-      "prodname": "Chinese TV",
-      "prodprice": 3000,
-      "prodimg": "./../../assets/chinese.jpg"
-    },
-    {
       "id": 102,
       "prodname": "LG TV",
       "prodprice": 20000,
-      "prodimg": "./../../assets/LG.jpg"
+      "prodimg": "./../../assets/LG.jpg",
+      "category":"TV"
+    },
+    {
+      "id": 103,
+      "prodname": "Onida TV",
+      "prodprice": 25000,
+      "prodimg": "./../../assets/onida.jpg",
+      "category":"TV"
     }
   ]
 }

@@ -19,3 +19,11 @@ img{
     background-color: rgb(183 219 228)
  
 }
+
+#btnhome{
+    display: inline-block;
+    background-color: #918767;
+    margin: 0px 10px 30px 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
