@@ -14,15 +14,16 @@ export class CartComponent implements OnInit {
   bagPrice:number=0;
 
   constructor(private crudOpnService:CrudOpnService) {
-    this.crudOpnService.getAllCartProducts().subscribe((res: any) => this.cartItems = res,
-    (err: string) => this.errMsg = err );
+    
 
-    this.checkCart();
+    
 
    }
 
   ngOnInit(): void {
-    // this.checkTotal();
+    this.crudOpnService.getAllCartProducts().subscribe((res: any) => {this.cartItems = res;
+                                                                      this.checkCart();},
+    (err: string) => this.errMsg = err );
   }
 
   // to check if cart is empty

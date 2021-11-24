@@ -1,13 +1,14 @@
-<div class="row row-cols-1 row-cols-md-4 g-4 p-4">
-  <div class="col" *ngFor='let prod of productslist'>
-    <div class="card text-center m-2">
+<div class="row row-cols-1 row-cols-md-4 g-4 p-3 m-2" >
+  <div class="col" *ngFor='let prod of productslist' >
+    <div class="card text-center m-2" style="border: solid rgb(183 219 228);">
       <img class="card-img-top" [src]= 'prod.prodimg' alt="Card image cap" >
       <div class="card-body">
         <h5 class="card-title">product: {{prod.prodname}}</h5>
-        <p class="card-text">product price: {{prod.prodprice}}</p>
+        <small class="card-text">product price: {{prod.prodprice}}</small>
         <button class="btn btn-warning m-1">Buy Now</button>
         <button class="btn btn-secondary" (click)='addToCart(prod)'>Add to cart</button>
       </div>
     </div>
 </div>
 </div>
+
