@@ -19,3 +19,18 @@ img{
     background-color: rgb(151, 215, 231)
  
 }
+.searchbox{
+    display: inline-block;
+    height: 38px;
+    border-radius:  10px 0 0 10px;
+    padding: 4px;
+  }
+  
+  .searchbutton{
+      transform:translateY(-6%);
+      display: inline-block;
+      height: 35px;
+      padding: 2.5px;
+      border-radius: 0 10px 10px 0 ;
+      opacity: .9;
+  }

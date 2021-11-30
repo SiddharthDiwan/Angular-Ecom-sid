@@ -1,5 +1,26 @@
+<div class="bg-dark text-light text-center">
+  <div class="container p-3">
+    <div class="row">
+    <div class="col opacity-75">
+      <input class="searchbox" placeholder="Search Items" [(ngModel)]="searchText" style="width: 300px;" >
+      <span class="bg-info searchbutton" style="width: 100px;">Search</span>
+    </div>
+    <div class="col opacity-75">
+      <label class="m-2">Sort Items : </label>
+      <select placeholder="Sort by" [(ngModel)]="sortValue" #sorting>
+        <option value="Acsending">By price: Low to high</option>
+        <option value="Descending">By price: High to low </option>
+        <option value="Popularity" >Popularity</option>
+        <option value=''>None</option>
+      </select>
+    </div>
+  </div>
+</div>
+</div> 
+
+
 <div class="row row-cols-1 row-cols-md-4 g-4 p-3 m-2" >
-  <div class="col" *ngFor='let prod of productslist' >
+  <div class="col" *ngFor='let prod of productslist | searchbox:searchText | sortBy:sortValue' >
     <div class="card text-center m-2" style="border: solid rgb(183 219 228);">
       <img class="card-img-top" [src]= 'prod.prodimg' alt="Card image cap" >
       <div class="card-body">

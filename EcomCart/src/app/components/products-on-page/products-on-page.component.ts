@@ -8,6 +8,8 @@ import { CrudOpnService } from 'src/app/services/crud-opn.service';
 })
 export class ProductsOnPageComponent implements OnInit{
 
+  searchText:string='';
+  sortValue:string='';
   productslist:any=[];
   errMsg:string='';
   
