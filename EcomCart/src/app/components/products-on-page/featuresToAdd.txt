@@ -1,3 +1,5 @@
+authentications
+forms
 search box from nav and export it to product page
 animations in navbars
 product become clickable

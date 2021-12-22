@@ -1,1 +1,24 @@
 
+<div *ngIf="showmenu" class="bg-dark text-light text-center">
+  <div id ='nav-padder' style="padding-top: 60px;"></div>
+    <div class="container p-3">
+      <div class="row">
+      <div class="col opacity-75">
+        <input class="searchbox" placeholder="Search Items" [(ngModel)]="searchText" (change)="updatesearch(searchText)" style="width: 300px;" >
+        <span class="bg-info searchbutton" style="width: 100px;">Search</span>
+      </div>
+      <div class="col opacity-75">
+        <label class="m-2">Sort Items : </label>
+        <select placeholder="Sort by" [(ngModel)]="sortValue" (change)="updatesort(sortValue)" class="sortingbox" #sorting>
+          <option value="Acsending">By price: Low to high</option>
+          <option value="Descending">By price: High to low </option>
+          <option value="Popularity" >Popularity</option>
+          <option value=''>None</option>
+        </select>
+      </div>
+    </div>
+  </div>
+</div> 
+
+
+<!-- <app-products-on-page [searchText]="searchText" [sortValue]="sortValue"></app-products-on-page> -->

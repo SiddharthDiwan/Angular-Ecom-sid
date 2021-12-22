@@ -73,9 +73,9 @@
       "category": "TV"
     },
     {
-      "id": 106,
+      "id": 103,
       "prodname": "Onida TV",
-      "prodprice": 22000,
+      "prodprice": 25000,
       "prodimg": "./../../assets/onida.jpg",
       "category": "TV"
     }

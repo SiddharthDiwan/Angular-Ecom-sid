@@ -26,11 +26,15 @@ img{
     padding: 4px;
   }
   
-  .searchbutton{
-      transform:translateY(-6%);
-      display: inline-block;
-      height: 35px;
-      padding: 2.5px;
-      border-radius: 0 10px 10px 0 ;
-      opacity: .9;
-  }
+.searchbutton{
+    transform:translateY(-6.5%);
+    display: inline-block;
+    height: 35px;
+    padding: 2.5px;
+    border-radius: 0 10px 10px 0 ;
+    opacity: .9;
+}
+
+.sortingbox{
+    height: 35px;
+}
