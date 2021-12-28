@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component,Input } from '@angular/core';
 import { SearchDataShareService } from 'src/app/services/search-data-share.service';
 
 @Component({
@@ -6,14 +6,17 @@ import { SearchDataShareService } from 'src/app/services/search-data-share.servi
   templateUrl: './searchbox.component.html',
   styleUrls: ['./searchbox.component.css']
 })
-export class SearchboxComponent {
+export class SearchboxComponent{
 
   sortValue:string='';
   searchText:string='';
 
   @Input()
-    showmenu:boolean =false;
+  showmenu:boolean =false;
+  
   constructor(private searchDataShareService:SearchDataShareService){}
+
+
 
   updatesearch(searchText:string){
     this.searchDataShareService.updateSearch(searchText);

@@ -8,17 +8,12 @@ import { SearchDataShareService } from 'src/app/services/search-data-share.servi
   styleUrls: ['./products-on-page.component.css']
 })
 export class ProductsOnPageComponent implements OnInit{
-
-  // @Input()
-  //   searchText:string='';
-
-  // @Input()
-  //   sortValue:string='';
   
   searchSortValue:any={};
   searchText1:string='';
   sortValue1:string='';
-
+  pageOfItems: Array<any>=[];
+  items = [];
   productslist:any=[];
   errMsg:string='';
 
@@ -27,7 +22,9 @@ export class ProductsOnPageComponent implements OnInit{
   }
 
   ngOnInit(){
-    this.crudOpnService.getAllProducts().subscribe((res: any) => this.productslist = res,
+    this.crudOpnService.getAllProducts().subscribe((res: any) => {
+                                                      this.productslist = res;
+                                                      this.items = this.productslist;},
                                                   (err: string) => this.errMsg = err );
 
     this.searchDataShareService.getSearchSort().subscribe( (res:any) => {
@@ -37,7 +34,14 @@ export class ProductsOnPageComponent implements OnInit{
     }
     );
    
+    
+
   }
+
+  onChangePage(pageOfItems: Array<any>) {
+    // update current page of items
+    this.pageOfItems = pageOfItems;
+}
 
   addToCart(product:any){
     this.crudOpnService.addToCart(product).subscribe(data=>{})

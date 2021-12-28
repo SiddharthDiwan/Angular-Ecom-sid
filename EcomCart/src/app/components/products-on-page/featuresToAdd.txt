@@ -1,5 +1,5 @@
+pagination
 authentications
-forms
-search box from nav and export it to product page
+forms, read regex
 animations in navbars
 product become clickable
