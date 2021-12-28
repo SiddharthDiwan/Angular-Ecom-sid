@@ -9,6 +9,7 @@ img{
 
 .card button{
     width: 109px;
+    
 }
 
 .card-title{
@@ -16,7 +17,7 @@ img{
 }
 
 .card-body{
-    background-color: rgb(151, 215, 231)
+    background-color: rgba(54, 145, 187, 0.6)
  
 }
 .searchbox{

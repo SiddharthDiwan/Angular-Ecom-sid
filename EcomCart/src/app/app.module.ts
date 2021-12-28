@@ -10,8 +10,10 @@ import { CartComponent } from './components/cart/cart.component';
 import { NavigationRoutesRoutingModule } from './modules/navigation-routes/navigation-routes-routing.module';
 import { SearchboxPipe } from './pipes/searchbox.pipe';
 import { SearchboxComponent } from './components/searchbox/searchbox.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SortByPipe } from './pipes/sort-by.pipe';
+import { JwPaginationModule } from 'jw-angular-pagination';
+import { ProductmanageComponent } from './components/productmanage/productmanage.component';
 
 
 @NgModule({
@@ -23,10 +25,11 @@ import { SortByPipe } from './pipes/sort-by.pipe';
     CartComponent,
     SearchboxPipe,
     SearchboxComponent,
-    SortByPipe
+    SortByPipe,
+    ProductmanageComponent
   ],
   imports: [
-    BrowserModule,HttpClientModule,NavigationRoutesRoutingModule,FormsModule
+    BrowserModule,HttpClientModule,NavigationRoutesRoutingModule,FormsModule,JwPaginationModule,ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

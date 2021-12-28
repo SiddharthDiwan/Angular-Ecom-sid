@@ -13,6 +13,10 @@ export class CrudOpnService {
     return this.httpClient.get(this.JsonUrl + '/products');
   }
 
+  getProductById(Id:any):any{
+    return this.httpClient.get(this.JsonUrl + '/products/' + Id);
+  }
+
   getAllCartProducts():any{
     return this.httpClient.get(this.JsonUrl + '/' + "cart" );
   }
@@ -23,5 +27,13 @@ export class CrudOpnService {
 
   addToCart(product:any){
     return this.httpClient.post(this.JsonUrl + '/cart', product);
+  }
+
+  addProduct(product:any):any{
+    return this.httpClient.post(this.JsonUrl + '/products', product);
+  }
+
+  updateProduct(product:any, id:any){
+    return this.httpClient.put(this.JsonUrl + '/products' + '/' + id , product);
   }
 }

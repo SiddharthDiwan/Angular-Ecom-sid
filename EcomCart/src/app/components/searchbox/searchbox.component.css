@@ -7,14 +7,39 @@
   }
   
 .searchbutton{
-    transform:translateY(-6.5%);
+    /* transform:translateY(-%); */
     display: inline-block;
     height: 35px;
     padding: 2.5px;
     border-radius: 0 10px 10px 0 ;
-    opacity: .9;
+    background-color: rgba(255, 0, 76, 0.685);
+    border: solid 2px rgba(255, 0, 76);
+}
+
+#searchmenu{
+    border: solid rgb(1, 26, 46);
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.85);
 }
 
 .sortingbox{
     height: 35px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+
+
+#searchmenu{
+    animation: pulse 0.3s;
+  }
+  
+@keyframes pulse {
+0% {
+    opacity: 0;
+}
+100% {
+    opacity: 1;
+}
 }

@@ -7,7 +7,7 @@ import { BehaviorSubject } from 'rxjs';
 export class SearchDataShareService {
 
   snsVal:any={
-    searchText:'on',
+    searchText:'',
     sortValue:''
   }
 
