@@ -141,6 +141,20 @@
       "prodprice": 35000,
       "prodimg": "./../../assets/oneplus.jpg",
       "category": "TV"
+    },
+    {
+      "id": 103,
+      "prodname": "Onida TV",
+      "prodprice": 25000,
+      "prodimg": "./../../assets/onida.jpg",
+      "category": "TV"
+    },
+    {
+      "id": 107,
+      "prodname": "Oneplus TV",
+      "prodprice": 15000,
+      "prodimg": "./../../assets/oneplus.jpg",
+      "category": "TV"
     }
   ]
 }

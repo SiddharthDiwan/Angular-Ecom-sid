@@ -1,5 +1,17 @@
 # EcomCart
 
+# To run the project
+ng -serve -o
+
+# after going inside the asset folder, run the json-server 
+json-server --watch prodjsondata.json
+
+
+
+
+
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.11.
 
 ## Development server
