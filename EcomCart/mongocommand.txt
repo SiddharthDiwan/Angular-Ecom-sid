@@ -1,0 +1,29 @@
+mongod.exe --dbpath "C:\Users\sdiwan\Documents\Personal\Angular\Angular-first\EcomCart\data"
+
+mongo.exe
+
+use databasename
+
+db.createCollection("name", options)
+
+db.dropDatabase()
+
+show dbs
+
+show collections
+
+db.COLLECTION_NAME.drop()
+
+db.COLLECTION_NAME.insert(document)
+
+db.COLLECTION_NAME.insertOne({})
+
+ db.empDetails.insertMany([  {},{} ])
+
+db.COLLECTION_NAME.find().pretty()
+
+db.mycol.findOne({title: "MongoDB Overview"})
+
+
+
+

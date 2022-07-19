@@ -4,7 +4,7 @@
       <img [src]= 'prod.prodimg' onerror="this.src='./../../assets/error.jpg'" />
       <div class="card-body">
         <h5 class="card-title">product: {{prod.prodname}}</h5>
-        <small class="card-text">product price: {{prod.prodprice}}</small>
+        <small class="card-text">product price: {{prod.prodprice}}</small><br>
         <button class="btn btn-warning m-1">Buy Now</button>
         <button class="btn btn-secondary" (click)='addToCart(prod)'>Add to cart</button>
       </div>
